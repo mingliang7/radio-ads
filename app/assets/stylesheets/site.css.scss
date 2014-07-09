@@ -1,19 +1,4 @@
-@font-face {
-  font-family: 'Flat-UI-Icons';
-  src:url('/assets/fonts/Flat-UI-Icons.eot');
-  src:url('/assets/fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Flat-UI-Icons.woff') format('woff'),
-    url('/assets/fonts/Flat-UI-Icons.svg#LatoRegular') format('svg'),
-    url('/assets/fonts/Flat-UI-Icons.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'Lato';
-        src: url('/assets/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg');
-    }
-}
+
 
 @import url(http://fonts.googleapis.com/css?family=Fasthand);
 @import url(http://fonts.googleapis.com/css?family=Freehand);
@@ -23,7 +8,22 @@
 @import url(http://fonts.googleapis.com/css?family=Nokora);
 @import url(http://fonts.googleapis.com/css?family=Dangrek);
 
-
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src:url('/fonts/Flat-UI-Icons.eot');
+  src:url('/fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Flat-UI-Icons.woff') format('woff'),
+    url('/fonts/Flat-UI-Icons.svg#LatoRegular') format('svg'),
+    url('/fonts/Flat-UI-Icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Lato';
+        src: url('/assets/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg');
+    }
+}
 
 h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
