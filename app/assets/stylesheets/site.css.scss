@@ -5,14 +5,14 @@
 @import url(http://fonts.googleapis.com/css?family=Chenla);
 @import url(http://fonts.googleapis.com/css?family=Nokora);
 @import url(http://fonts.googleapis.com/css?family=Dangrek);
-
+body{
 @font-face {
-  font-family: 'Lato';
-  src:url('/assets/lato/Lato-Reg-webfont.eot');
-  src:url('/assets/lato/Lato-Reg-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/assets/lato/Lato-Reg-webfont.woff') format('woff'),
-    url('/assets/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg'),
-    url('/assets/lato/iLato-Reg-webfont.ttf') format('truetype');
+  font-family: 'Flat-UI-Icons';
+  src:url('/assets/Flat-UI-Icons.eot');
+  src:url('/assets/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
+    url('/assets/Flat-UI-Icons.woff') format('woff'),
+    url('/assets/Flat-UI-Icons.svg#LatoRegular') format('svg'),
+    url('/assets/Flat-UI-Icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,6 +21,7 @@
         font-family: 'Lato';
         src: url('/assets/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg');
     }
+}
 }
 h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
