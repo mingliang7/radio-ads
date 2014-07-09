@@ -15,5 +15,5 @@
  *= require bootstrap-wysihtml5
  */
  body{
-	background:url('/assets/images/image-01.jpg');
+	background-image: url('/public/assests/images/ban.png');
 }
