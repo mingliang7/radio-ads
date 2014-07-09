@@ -1,0 +1,12 @@
+<div class="col-lg-4 col-md-4 col-sm-4 mar-t dialog dialog-info">
+	  <div class="radio-blog">
+        <h6>ស្តាប់ការផ្សាយផ្ទាល់</h6>
+        <p id='preview'></p><script id='myscript' language='javascript' src='http://flashplayer.listen2myradio.com/getInfo.js?id=28949eb30656e75f0a8dddb61f62c895f801'></script>
+        </div>
+	<div class="image-ads">
+		<%@advertisments.each do |a| %>
+			<%= image_tag(a.image) %>
+			<em><%= a.say %></em>
+		<% end %>
+	</div>
+</div>

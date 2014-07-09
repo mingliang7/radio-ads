@@ -1,0 +1,33 @@
+   <div class="col-lg-8 col-md-8 col-sm-8 mar-t" style="margin-top:60px;">
+    <div class="news">
+        <h6 style="margin-bottom:8px;">ពត៌មានប្រចាំថ្ងៃ</h6>
+        <hr style="margin-top:0px;margin-bottom:10px;">
+        <% @thumbnails.each do |thumb| %>
+        <div class="col-lg-12">
+        <div class="col-lg-6">
+            <div class="po-image"><%= image_tag(thumb.thumb_image,size: "300x200")%></div>
+        </div>
+        <div class="col-lg-6">
+            <div class="po-title"><h6><%= thumb.thumb_title %></h6></div>
+            <div class="po-desc"><%= truncate( raw( sanitize(thumb.thumb_post, :tags => %w(table tr td), :attributes => %w(id class style) ) ), :length => 180, :omission => "...")%></div>
+            <div class="po-desc"><%#= thumb.thumb_post.html_safe %> <%= link_to "អាន​បន្ត", site_show_path(:thumbnail_id => thumb), style: "color:#1c7cb3;" %>      <em style="font-size:14px;float:right;margin-top:3px;">
+                    <% if thumb.created_at > Time.now.beginning_of_day %>
+                        <%="#{time_ago_in_words(thumb.created_at)} ago"%> 
+                    <% else %> 
+                        <%= thumb.created_at.strftime("%b %d, %Y") %>
+                    <% end %>
+                </em> </div>
+               <!--  <div class="align-time" style="font-size:12px;float:right;color:#1c7cb3;">
+                </div> -->
+        </div>
+        </div>
+        <% end %>
+
+    </div>    
+        <div class="pagination text-centered">
+        <%= will_paginate(@thumbnails, renderer: BootstrapPagination::Rails) %>
+    </div>
+</div>
+<div style="margin-top:55px;">
+<%= render 'sidebar' %>
+</div>

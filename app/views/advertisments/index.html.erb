@@ -1,0 +1,32 @@
+<div class="page-header mar-t">
+<%= render "layouts/msg" %>
+  <%= link_to new_advertisment_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Advertisment
+  <% end %>
+  <h1>ពាណិជ្ជកម្មទាំងអស់</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Image</th>
+            <th>Say</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @advertisments) do |advertisment| %>
+            <td><%= advertisment.image %></td>
+            <td><%= advertisment.say %></td>
+            <td><%= link_to 'Show', advertisment %></td>
+        <td><%= link_to 'Edit', edit_advertisment_path(advertisment) %></td>
+        <td><%= link_to 'Destroy', advertisment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

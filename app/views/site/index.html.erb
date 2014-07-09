@@ -1,0 +1,22 @@
+<div class="col-lg-8 col-md-8 col-sm-8 mar-t">
+<%= render "layouts/msg" %>
+<%= render "layouts/carousel" %>
+<h5 style="margin-bottom:0px;margin-top:20px;font-family: 'Preahvihear', cursive;">ពត៌មាន​ប្រចាំថ្ងៃ</h5>
+<hr style="margin-top:10px;margin-bottom:10px;">
+<div class="col-lg-12" style="padding:0px;">
+	<% @thumbnails.each do |t| %>
+		<%= link_to site_show_path(thumbnail_id: t) do %>
+			<div class="col-lg-6">
+				<div class="box">
+					<div class="box-img"><%= image_tag(t.thumb_image,size: "360x230") %></div>
+					<div class="box-title"><%= truncate(t.thumb_title, length: 60) %></div>
+				</div>
+			</div>	
+		<% end %>
+	<% end %>
+</div>
+	<div class="pagination text-centered">
+		<%= will_paginate(@thumbnails, renderer: BootstrapPagination::Rails) %>
+	</div>
+</div>
+<%= render 'sidebar' %>

@@ -1,0 +1,39 @@
+<div class="page-header mar-t">
+<%= render "layouts/msg" %>
+  <%= link_to new_thumbnail_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    បន្ថែម
+  <% end %>
+  <h1>អត្ថបទទាំងអស់</h1>
+</div>
+
+
+<div class="container-fluid" >
+    <div class="container container-pad" id="property-listings">  
+      <div class="row">         
+            <%= content_tag_for(:tr, @thumbnails) do |thumb| %>
+              <div class="col-lg-6"> 
+                    <!-- Begin Listing: 609 W GRAVERS LN-->
+                    <div class="brdr bgc-fff pad-10 box-shad property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent" style="height: auto;">
+                            <%=image_tag(thumb.thumb_image)%></a>
+                            <div class="clearfix visible-sm"></div>
+                            <div class="media-body fnt-smaller">
+                                <h4 class="media-heading">
+                                  <h6 style="font-size:1em;"><%= truncate(thumb.thumb_title,length: 20)%></h6>
+                                </h4>
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li><%= link_to "កែប្រែ", edit_thumbnail_path(thumb)%></li>
+                                    <li style="list-style: none">|</li>
+                                    <li><%= link_to "លុប", thumb, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+                                </ul>
+                                <p class="hidden-xs"><%= truncate( raw( sanitize(thumb.thumb_post, :tags => %w(table tr td), :attributes => %w(id class style) ) ), :length => 20, :omission => "...", style: "font-size:12px;")%></p>
+                            </div>
+                        </div>
+                  </div>
+              </div><!-- End Listing--> 
+            <% end %>    
+          </div><!-- End Col -->
+    </div><!-- End row -->
+</div><!-- End container -->

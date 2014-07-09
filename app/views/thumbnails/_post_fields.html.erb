@@ -1,0 +1,12 @@
+<div class="nested-fields">
+	<div class="field">
+		<%= f.label :Image%>
+		<br>
+		<%= f.text_field :image%><br>
+		<br>
+		<%= f.label :description%>
+		<br>
+		<%= f.text_area :description, rows: 4%>
+		<%= link_to_remove_association "remove post", f%>
+	</div>
+</div>
