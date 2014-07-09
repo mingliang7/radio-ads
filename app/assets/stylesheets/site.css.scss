@@ -1,18 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Fasthand);
-@import url(http://fonts.googleapis.com/css?family=Freehand);
-@import url(http://fonts.googleapis.com/css?family=Preahvihear);
-@import url(http://fonts.googleapis.com/css?family=Metal);
-@import url(http://fonts.googleapis.com/css?family=Chenla);
-@import url(http://fonts.googleapis.com/css?family=Nokora);
-@import url(http://fonts.googleapis.com/css?family=Dangrek);
-body{
 @font-face {
   font-family: 'Flat-UI-Icons';
-  src:url('/assets/Flat-UI-Icons.eot');
-  src:url('/assets/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
-    url('/assets/Flat-UI-Icons.woff') format('woff'),
-    url('/assets/Flat-UI-Icons.svg#LatoRegular') format('svg'),
-    url('/assets/Flat-UI-Icons.ttf') format('truetype');
+  src:url('/assets/fonts/Flat-UI-Icons.eot');
+  src:url('/assets/fonts/Flat-UI-Icons.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Flat-UI-Icons.woff') format('woff'),
+    url('/assets/fonts/Flat-UI-Icons.svg#LatoRegular') format('svg'),
+    url('/assets/fonts/Flat-UI-Icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +14,17 @@ body{
         src: url('/assets/lato/Lato-Reg-webfont.svg#LatoRegular') format('svg');
     }
 }
-}
+
+@import url(http://fonts.googleapis.com/css?family=Fasthand);
+@import url(http://fonts.googleapis.com/css?family=Freehand);
+@import url(http://fonts.googleapis.com/css?family=Preahvihear);
+@import url(http://fonts.googleapis.com/css?family=Metal);
+@import url(http://fonts.googleapis.com/css?family=Chenla);
+@import url(http://fonts.googleapis.com/css?family=Nokora);
+@import url(http://fonts.googleapis.com/css?family=Dangrek);
+
+
+
 h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
 }
