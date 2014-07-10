@@ -80,6 +80,9 @@ label{
 			img{
 				width: 100%;
 				box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+				-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+				    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+				    -o-box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
 			}
 		}
 		.box-title{
@@ -91,7 +94,7 @@ label{
 			font-weight: bold;
 		}
 		.box-desc{
-			font-size: 0.8em;
+			font-size: 0.6em;
 		}
 	}
 }
@@ -257,6 +260,7 @@ label{
 		padding-top:20px;
 		padding-bottom: 0px;
 		color:#777;
+		
 	}
 	.navbar-nav > li > a {
 		font-size:0.8em;
@@ -365,3 +369,6 @@ label{
    margin-top: -10px;
 }
 
+.navbar-brand{
+	margin-top: -12px;
+}
