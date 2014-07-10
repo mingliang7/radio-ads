@@ -30,6 +30,6 @@
         src:     url('<%= asset_path "Flat-UI-Icons.svg"%>#Flate-UI-Icons') format('svg');
     }
 }
-.mt-bot-300{
-  margin-bottom: 284px;
+body{
+  background: blue;
 }
