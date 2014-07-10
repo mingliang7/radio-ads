@@ -2,7 +2,7 @@ class SiteController < ApplicationController
   before_action :set_ads, only:[:index, :show, :news, :about]
   def index
     
-  	@thumbnails = Thumbnail.order("created_at DESC").paginate(page: params[:page],per_page: 4)
+  	@thumbnails = Thumbnail.order("created_at DESC").paginate(page: params[:page],per_page: 16)
   	
   end
   def set_ads

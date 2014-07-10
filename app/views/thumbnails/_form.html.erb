@@ -26,7 +26,7 @@
       </div>
   </div>
     <div class="form-group">
-      <%= f.label "អត្ថន័យ", :class => "col-lg-2 control-label" %>
+      <%= f.label "អត្ថន័យទំព័រមុខ", :class => "col-lg-2 control-label" %>
       <div class="col-lg-10">
         <%= f.text_area :thumb_post, :class => "form-control wysihtml5", :rows => 10 %>
       </div>
@@ -45,10 +45,10 @@
       <% end %>
     </div>
 </div>
-<p><%= f.link_to_add '<span class="glyphicon glyphicon-plus"></span> Add'.html_safe, :posts, :data => { :target => "#tasks" } %></p>
+<p><%= f.link_to_add '<span class="glyphicon glyphicon-plus"></span> បន្ថែមអត្ថបទ'.html_safe, :posts, :data => { :target => "#tasks" } %></p>
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
-      <%= f.submit :class => "btn btn-primary" %>
+      <%= f.submit 'បង្កើតពត៌មាន', :class => "btn btn-primary" %>
     </div>
   </div>
 <% end %>
